@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "productname": "Granulated Sugar",
+        "price": 2.49,
+        "category": "Food - Baking",
+        "description": "Fine granulated sugar for all your baking needs."
+    },
+    {
+        "id": 2,
+        "productname": "Classic Caesar Salad Kit",
+        "price": 4.99,
+        "category": "Food - Salads",
+        "description": "Everything you need for a fresh and delicious Caesar salad."
+    },
+    {
+        "id": 3,
+        "productname": "Basil-infused Olive Oil",
+        "price": 6.99,
+        "category": "Food - Cooking Oil",
+        "description": "Extra virgin olive oil infused with fresh basil."
+    },
+    {
+        "id": 4,
+        "productname": "Maple Pecan Pancake Mix",
+        "price": 4.99,
+        "category": "Food - Breakfast",
+        "description": "A fluffy pancake mix infused with maple and pecans, perfect for a hearty breakfast."
+    },
+    {
+        "id": 5,
+        "productname": "Home Brewing Starter Kit",
+        "price": 79.99,
+        "category": "Food",
+        "description": "All-in-one kit for brewing beer at home."
+    },
+    {
+        "id": 6,
+        "productname": "Herbed Goat Cheese",
+        "price": 5.49,
+        "category": "Food - Cheese",
+        "description": "Tangy goat cheese infused with herbs, perfect for snacking."
+    },
+    {
+        "id": 7,
+        "productname": "Non-Stick Grill Mat",
+        "price": 19.99,
+        "category": "Outdoor",
+        "description": "Reusable mat that prevents food from sticking to the grill."
+    },
+    {
+        "id": 8,
+        "productname": "Kids' Activity Book",
+        "price": 14.99,
+        "category": "Books",
+        "description": "Fun book filled with puzzles and games for kids."
+    },
+    {
+        "id": 9,
+        "productname": "Emergency Preparedness Kit",
+        "price": 99.99,
+        "category": "Safety",
+        "description": "Complete kit for emergency situations including food and water."
+    },
+    {
+        "id": 10,
+        "productname": "Pet Water Bottle",
+        "price": 18.99,
+        "category": "Pets",
+        "description": "Portable water bottle for pets when traveling."
+    },
+    {
+        "id": 11,
+        "productname": "Leek and Potato Soup",
+        "price": 3.29,
+        "category": "Food - Soups",
+        "description": "Savory soup made with leeks and potatoes."
+    },
+    {
+        "id": 12,
+        "productname": "Pasta Primavera Kit",
+        "price": 7.49,
+        "category": "Food - Meal Kits",
+        "description": "Quick meal kit with pasta and fresh vegetables."
+    },
+    {
+        "id": 13,
+        "productname": "Honey-Balsamic Vinaigrette",
+        "price": 3.39,
+        "category": "Food - Dressing",
+        "description": "A sweet and tangy vinaigrette dressing for salads."
+    },
+    {
+        "id": 14,
+        "productname": "Organic Baby Carrots",
+        "price": 2.99,
+        "category": "Food - Fresh Produce",
+        "description": "Fresh and crunchy baby carrots ready for snacking."
+    },
+    {
+        "id": 15,
+        "productname": "Sourdough Bread",
+        "price": 4.99,
+        "category": "Food - Bakery",
+        "description": "Artisan-made sourdough bread with a tangy flavor."
+    },
+    {
+        "id": 16,
+        "productname": "Peach Mango Smoothie Mix",
+        "price": 5.99,
+        "category": "Food - Beverages",
+        "description": "A blend of peach and mango for a tropical smoothie."
+    },
+    {
+        "id": 17,
+        "productname": "Portable Pet Pooper Scooper",
+        "price": 12.99,
+        "category": "Pets",
+        "description": "Compact scooper for easy waste clean-up during walks."
+    },
+    {
+        "id": 18,
+        "productname": "Smart Scale",
+        "price": 59.99,
+        "category": "Health",
+        "description": "Wi-Fi smart scale for tracking weight and BMI."
+    },
+    {
+        "id": 19,
+        "productname": "Kale Caesar Salad Kit",
+        "price": 5.99,
+        "category": "Food - Salads",
+        "description": "Fresh kale with Caesar dressing and croutons."
+    },
+    {
+        "id": 20,
+        "productname": "Lentil Soup",
+        "price": 2.49,
+        "category": "Food - Canned Goods",
+        "description": "Flavorful lentil soup, perfect for a quick meal."
+    },
+    {
+        "id": 21,
+        "productname": "Chipotle Black Bean Salad",
+        "price": 3.29,
+        "category": "Food - Salads",
+        "description": "A zesty salad with black beans, corn, and chipotle dressing."
+    },
+    {
+        "id": 22,
+        "productname": "Active Racerback Tank",
+        "price": 24.99,
+        "category": "Clothing - Tops",
+        "description": "Lightweight and moisture-wicking racerback tank for workouts."
+    },
+    {
+        "id": 23,
+        "productname": "Teriyaki Tofu Stir-Fry",
+        "price": 7.49,
+        "category": "Food - Prepared Meals",
+        "description": "Tofu stir-fried with fresh vegetables in teriyaki sauce."
+    },
+    {
+        "id": 24,
+        "productname": "Teriyaki Sauce",
+        "price": 2.99,
+        "category": "Food - Condiments",
+        "description": "Sweet and savory sauce for marinating and glazing meats or vegetables."
+    },
+    {
+        "id": 25,
+        "productname": "Ergonomic Mouse Pad with Wrist Support",
+        "price": 14.99,
+        "category": "Office",
+        "description": "Comfortable mouse pad designed to reduce wrist strain."
+    },
+    {
+        "id": 26,
+        "productname": "Buffalo Chicken Wraps",
+        "price": 5.99,
+        "category": "Food - Prepared Meals",
+        "description": "Savory wraps with buffalo chicken and fresh vegetables."
+    },
+    {
+        "id": 27,
+        "productname": "Coconut Curry Lentils",
+        "price": 5.79,
+        "category": "Food - Canned Goods",
+        "description": "Lentils cooked in a coconut curry for a hearty meal."
+    },
+    {
+        "id": 28,
+        "productname": "Coconut Chips",
+        "price": 3.59,
+        "category": "Food - Snacks",
+        "description": "Crunchy, toasted coconut chips for snacking."
+    },
+    {
+        "id": 29,
+        "productname": "Fridge Magnet Set",
+        "price": 15.99,
+        "category": "Home",
+        "description": "Fun fridge magnets to decorate your kitchen."
+    },
+    {
+        "id": 30,
+        "productname": "Bamboo Bathtub Caddy",
+        "price": 34.99,
+        "category": "Home",
+        "description": "Expandable caddy for holding books, phones, and snacks while in the bath."
+    }
+]
