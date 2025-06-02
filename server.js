@@ -23,7 +23,7 @@ mongoose.connect("mongodb://localhost:27017/anjalidb")
 const userSchema=new mongoose.Schema({
     name: String,
     age: Number,
-    branch: String
+    branch: String,
 });
 
 // Create a user model
@@ -88,7 +88,63 @@ catch(err){
 });
 
 
+// Create a new user
+
+app.post('/adduser', async (req, res) => {
+    try{
+        console.log(req.body);
+        // const { name, age, branch } = req.body;
+        // const newUser = new User({ name, age, branch });
+        const newUser = new User(req.body);
+        await newUser.save();
+        res.status(201).json({ message: 'User created successfully', user: newUser });
+    }
+    catch(err){
+        console.error("Error creating user:", err.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+})
+
+// Update a user by ID
+
+app.put('/api/users/:id', async (req, res) => {
+    const userId = req.params.id;
+    try{
+        
+        const updatedUser=await User.findByIdAndUpdate(userId, req.body, { new: true });
+        if (!updatedUser) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        res.status(201).json({ message: 'User updated successfully', user: updatedUser });
+    }
+    catch(err){
+        console.error("Error updating user:", err.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+})
+
+
+// Delete a user by ID
+
+app.delete('/api/users/:id', async (req, res) => {
+    const userId = req.params.id;
+    try{
+        const deletedUser = await User.findByIdAndDelete(userId);
+        if (!deletedUser) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        res.status(200).json({ message: 'User deleted successfully',user: deletedUser });
+    }
+    catch(err){
+        console.error("Error deleting user:", err.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+// get ,post,put,patch
