@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 dotenv.config();
 
 const app = express();
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON bodies
 const PORT = process.env.PORT || 8001;
 
@@ -21,9 +22,26 @@ mongoose.connect("mongodb://localhost:27017/anjalidb")
 
 // Define a simple user schema
 const userSchema=new mongoose.Schema({
-    name: String,
-    age: Number,
-    branch: String,
+    name: {
+        type: String,
+        required: [true, 'Name is required'],
+        minlength: [2, 'Name must be at least 2 characters long'],
+        maxlength: [30, 'Name must be at most 30 characters long'],
+        trim: true
+    },
+    age: {
+        type: Number,
+        required: [true, 'Age is required'],
+        min: [0, 'Age must be a positive number'],
+        max: [120, 'Age must be at most 120']
+    },
+    branch: {
+        type: String,
+        required: [true, 'Branch is required'],
+        minlength: [2, 'Branch must be at least 2 characters long'],
+        maxlength: [30, 'Branch must be at most 30 characters long'],
+        trim: true
+    },
 });
 
 // Create a user model
@@ -100,8 +118,11 @@ app.post('/adduser', async (req, res) => {
         res.status(201).json({ message: 'User created successfully', user: newUser });
     }
     catch(err){
-        console.error("Error creating user:", err.message);
-        res.status(500).json({ error: 'Internal Server Error' });
+        const errorMessage = Object.values(err.errors).map(error => error.message);
+        console.log(errorMessage);
+        // console.error("Error creating user:", err.message);
+        
+        res.status(500).json({ error: errorMessage.join(',') });
     }
 })
 
@@ -140,7 +161,6 @@ app.delete('/api/users/:id', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
